@@ -5,7 +5,7 @@ import {
   Animated,
   Linking,
   Text,
-  Image,
+  ImageBackground,
   TouchableOpacity,
   ScrollView,
 } from 'react-native';
@@ -85,7 +85,7 @@ class EventCard extends Component {
 
     return (
       <View style={styles.container}>
-        <Image source={Unsplash} resizeMode="cover" style={styles.background}>
+        <ImageBackground source={Unsplash} resizeMode="cover" style={styles.background}>
           <Animated.View style={[styles.card, offsetStyle]}>
             <TouchableOpacity onPress={this.toggleCard}>
               <View style={styles.header}>
@@ -122,7 +122,7 @@ class EventCard extends Component {
               </ScrollView>
             </Animated.View>
           </Animated.View>
-        </Image>
+        </ImageBackground>
       </View>
     );
   }
