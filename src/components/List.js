@@ -65,7 +65,7 @@ class List extends Component {
     headerStyle: {
       height: 80,
       backgroundColor: '#EC407A',
-      justifyContent: 'center',
+      // justifyContent: 'center',
     },
     headerTitleStyle: {
       color: 'white',

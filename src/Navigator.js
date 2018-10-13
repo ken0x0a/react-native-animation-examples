@@ -1,5 +1,5 @@
 import {
-  StackNavigator,
+  createStackNavigator,
 } from 'react-navigation';
 
 import List from './components/List';
@@ -16,7 +16,7 @@ import EventCard from './animations/EventCard';
 import CollapseHeader from './animations/CollapseHeader';
 import MagicInput from './animations/MagicInput';
 
-const Navigator = StackNavigator({
+const Navigator = createStackNavigator({
   List: { screen: List },
   AnimatedBasic: { screen: AnimatedBasic },
   MagicButton: { screen: MagicButton },
